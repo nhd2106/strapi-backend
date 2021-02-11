@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "posts"
+    "name": "posts",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -28,6 +30,12 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "shortDesc": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
